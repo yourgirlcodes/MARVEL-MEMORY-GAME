@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <link rel="stylesheet" href="css/memorygame.css">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>MARVEL MEMORY GAME</title>
+
+</head>
+
+<body>
+
+    <div id="openingPage">
+
+        <div id="middleImage"><img src="./images/marvel-logo2.jpg"></div>
+        <div id="themeQuestion">PICK A LEVEL:</div>
+        <button class="levelChoice" id="6">Aspiring Hero</button>
+        <button class="levelChoice" id="9">Hero in Training</button>
+        <button class="levelChoice" id="12">Superhero</button>
+
+    </div>
+    <div class="theGame" id="memoryGame">
+        <div class="navbar navbar-default justify-content-center" id="navHeader">
+            <button value="Refresh Page" onClick="window.location.reload()" id="newGame"><img
+                    src="images/PinClipart.com_bubbles-clipart_3373589.png" /></button>
+            <span id="score">WATCH YOUR SCORE HERE</span>
+
+        </div>
+
+        <div id="gameSquare">
+
+            <div class="row">
+                <div class="card" id="0"></div>
+                <div class="card" id="1"></div>
+                <div class="card" id="2"></div>
+            </div>
+
+            <div class="row">
+                <div class="card" id="3"></div>
+                <div class="card" id="4"></div>
+                <div class="card" id="5"></div>
+            </div>
+
+
+            <div class="row">
+                <div class="card" id="6"></div>
+                <div class="card" id="7"></div>
+                <div class="card" id="8"></div>
+            </div>
+
+            <div class="row">
+                <div class="card" id="9"></div>
+                <div class="card" id="10"></div>
+                <div class="card" id="11"></div>
+            </div>
+
+            <div class="middle">
+                <div class="card" id="12"></div>
+                <div class="card" id="13"></div>
+                <div class="card" id="14"></div>
+            </div>
+
+            <div class="middle">
+                <div class="card" id="15"></div>
+                <div class="card" id="16"></div>
+                <div class="card" id="17"></div>
+            </div>
+
+            <div class="advanced">
+                <div class="card" id="18"></div>
+                <div class="card" id="19"></div>
+                <div class="card" id="20"></div>
+            </div>
+
+            <div class="advanced">
+                <div class="card" id="21"></div>
+                <div class="card" id="22"></div>
+                <div class="card" id="23"></div>
+            </div>
+
+
+
+        </div>
+
+    </div>
+
+    <div id="myModal" class="modal">
+
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close"><button value="Refresh Page" onClick="window.location.reload()" id="newGame"><img
+                            src="images/newGameCopy.png" /></button>
+                </span>
+
+            </div>
+            <div class="modal-body" id="winnerSuperhero">
+                <img src="images/hero8.png" />
+                <h2>YOU WON!</h2>
+            </div>
+            <div class="modal-footer">
+                <h3 id="incorrectGuesses"></h3>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"
+        integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ"
+        crossorigin="anonymous"></script>
+    <script src="js/memorygame.js"></script>
+</body>
+
+
+</html>

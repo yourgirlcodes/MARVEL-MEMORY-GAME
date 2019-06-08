@@ -1,0 +1,177 @@
+body {
+    margin: 0;
+    height: 100%;
+    overflow: hidden;
+}
+
+
+.theGame {
+    background-image: url(https://wallpaperplay.com/walls/full/4/a/7/330263.jpg);
+    margin: 0;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;   
+}
+
+#score {
+    color: white;
+    font-size: 2vh;
+    margin: 4vh;
+    position: absolute;
+    border: 0.2vh solid white;
+    padding: 2vh;
+    font-family: 'Roboto Mono', monospace;
+}
+
+#score:hover{
+    color: red;
+    font-family: 'Roboto Mono', monospace;
+    border: 0.2vh solid red;
+}
+
+.card {
+    border: 2px solid white;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-origin: content-box;
+    height: 20vh;
+    width: 10vw;
+    margin: 1em;
+}
+
+.card:hover {
+    border-radius: 50%;
+}
+
+.row {
+    display: flex;
+    vertical-align: middle;
+    flex-direction: column;
+}
+
+#gameSquare {
+    display: flex;
+    justify-content: center;
+    vertical-align: middle;
+    flex-direction: row;
+    margin: 1vh;
+}
+
+#navHeader {
+    text-align: center;
+}
+
+#newGame {
+    background-color: black;
+    border: none;
+    margin-top: 2em;
+}
+
+#newGame:hover {
+    -webkit-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    transform: scale(1.3);
+}
+
+#myModel {
+    display: none;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+    top: 20%;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover, .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-header {
+    padding: 2px 16px;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+    text-align: center;
+    font-family: 'Roboto Mono', monospace;
+    text-align: center;
+}
+
+.modal-body {
+    padding: 2px 16px;
+}
+
+.modal-footer {
+    padding: 2px 16px;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+    text-align: center;
+    font-family: 'Roboto Mono', monospace;
+    text-align: center;
+}
+
+.modal-content {
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.7);
+    margin: auto;
+    padding: 0;
+    border: 1px solid black;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+#winnerSuperhero{
+    transition: all 800ms ease-in-out;
+}
+
+#winnerSuperhero:hover{
+    -ms-transform: rotate(360deg); /* IE 9 */
+    -webkit-transform: rotate(360deg); /* Chrome, Safari, Opera */
+    transform: rotate(360deg);
+    border:10px #773355 solid;
+    padding:15px;
+}
+
+.middle{
+    display: none;
+    display: flex;
+    vertical-align: middle;
+    flex-direction: column;
+}
+
+.advanced{
+    display: none;
+    display: flex;
+    vertical-align: middle;
+    flex-direction: column;
+}
+/* Add Animation */
+
+@keyframes animatetop {
+    from {
+        top: -300px;
+        opacity: 0
+    }
+    to {
+        top: 0;
+        opacity: 1
+    }
+}
