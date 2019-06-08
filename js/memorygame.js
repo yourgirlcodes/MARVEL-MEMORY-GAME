@@ -27,7 +27,6 @@ function confirmNumberOfCards() {
             document.getElementById("openingBlock").style.display = "none";
             document.getElementById("openingPage").style.display = "none";
             createArray(images);
-            console.log(images)
 
             //ADJUST AMOUNT OF CARDS SHOWN TO USER
             if (images == 6) {
@@ -43,7 +42,6 @@ function confirmNumberOfCards() {
                 document.getElementById("pro").style.display = "flex";
             }
 
-
         });
 
     }
@@ -56,7 +54,6 @@ function createArray(images) {
         imageArray.push("./images/" + "hero" + i + ".png");
     }
     shuffleArray(imageArray);
-    console.log(imageArray);
 }
 
 //RANDOMIZING CREATED ARRAY EVERY TIME THE ARRAY IS CREATED
@@ -94,7 +91,6 @@ function playGame() {
                         youWon = true;
                         winnerAnimation();
                     }
-                    console.log("correct guesses " + correctGuesses);
                     updateScores();
 
                     //NO MATCH:
@@ -111,10 +107,7 @@ function playGame() {
                         secondCard.style.backgroundColor = "";
                     }, 1000)
                     cardsPicked = 0;
-                    console.log("incorrect guesses" + incorrectGuesses);
                 }
-                console.log("total guesses " + totalGuesses);
-
             }
 
         });
@@ -123,7 +116,7 @@ function playGame() {
 
 //UPDATING CORRECT AND INCORRECT SCORES
 function updateScores() {
-    document.getElementById("score").innerHTML = "Correct guesses: " + correctGuesses + "<br> Incorrect guesses: " + incorrectGuesses;
+    document.getElementById("score").innerHTML = "Incorrect guesses: " + incorrectGuesses;
 }
 
 //MODAL TO CONGRATULATE THE WINNER
