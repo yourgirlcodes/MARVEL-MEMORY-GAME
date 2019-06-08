@@ -192,7 +192,7 @@ body {
 
 #openingBlock img {
     top: 30%;
-    left: 60%;
+    left: 70%;
     position: absolute;
     opacity: 0.7;
 }
@@ -205,8 +205,8 @@ body {
     font-family: 'Roboto Mono', monospace;
     font-size: 1rem;
     position: relative;
-    top: 60vh;
-    left: 30%;
+    top: 50vh;
+    left: 45%;
     background-color: maroon;
     border: 2px solid white;
     margin: 2rem;

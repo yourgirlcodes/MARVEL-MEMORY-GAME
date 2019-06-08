@@ -70,7 +70,7 @@ function playGame() {
         cardClicked.addEventListener("click", function (e) {
             var indexOfPic = e.target.id;
             e.target.style.backgroundImage = "url(" + imageArray[indexOfPic] + ")";
-            e.target.style.backgroundColor = "rgba(255,255,255, 0.2)";
+            e.target.style.backgroundColor = "rgba(255,255,255, 0.4)";
 
             if (cardsPicked == 0) {
                 firstCard = e.target;
