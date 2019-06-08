@@ -4,13 +4,13 @@ body {
     overflow: hidden;
 }
 
-
 .theGame {
     background-image: url(https://wallpaperplay.com/walls/full/4/a/7/330263.jpg);
     margin: 0;
     height: 100%;
     background-size: cover;
-    background-repeat: no-repeat;   
+    background-repeat: no-repeat;
+    display: none;
 }
 
 #score {
@@ -23,7 +23,7 @@ body {
     font-family: 'Roboto Mono', monospace;
 }
 
-#score:hover{
+#score:hover {
     color: red;
     font-family: 'Roboto Mono', monospace;
     border: 0.2vh solid red;
@@ -43,7 +43,7 @@ body {
     border-radius: 50%;
 }
 
-.row {
+.row, .middle, .advanced{
     display: flex;
     vertical-align: middle;
     flex-direction: column;
@@ -138,31 +138,71 @@ body {
     animation-duration: 0.4s
 }
 
-#winnerSuperhero{
+#winnerSuperhero {
     transition: all 800ms ease-in-out;
 }
 
-#winnerSuperhero:hover{
-    -ms-transform: rotate(360deg); /* IE 9 */
-    -webkit-transform: rotate(360deg); /* Chrome, Safari, Opera */
+#winnerSuperhero h2{
+    font-family: 'Roboto Mono', monospace;
+    font-size: 4vh;
+    color: white;
+}
+
+#winnerSuperhero:hover {
+    -ms-transform: rotate(360deg);
+    /* IE 9 */
+    -webkit-transform: rotate(360deg);
+    /* Chrome, Safari, Opera */
     transform: rotate(360deg);
-    border:10px #773355 solid;
-    padding:15px;
+    border: none;
+    padding: 15px;
 }
 
-.middle{
-    display: none;
-    display: flex;
-    vertical-align: middle;
-    flex-direction: column;
+#pro, #intermediate, #beginner{
+    display: flex; 
 }
 
-.advanced{
-    display: none;
-    display: flex;
-    vertical-align: middle;
-    flex-direction: column;
+#themeQuestion {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 4vh;
+    color: white;
+    text-align: center;
 }
+
+#openingBlock {
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    vertical-align: middle;
+    background-color: black;
+    position: absolute;
+    z-index: 1000000;
+}
+
+#middleImage img {
+    top: 20%;
+    left: 45%;
+    position: absolute;
+}
+
+.levelChoice {
+    height: 10vh;
+    width: 10vw;
+    border-radius: 50%;
+    background-color: red;
+    color: white;
+    opacity: 0.7%;
+    bottom: 50vh;
+    left:50vh;
+    display: inline-block;
+    justify-content: center;
+    vertical-align: middle;
+}
+
+.levelChoice:hover {
+    opacity: 0.5;
+}
+
 /* Add Animation */
 
 @keyframes animatetop {
