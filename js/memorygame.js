@@ -130,17 +130,3 @@ function coolAnimation() {
 
 confirmNumberOfCards();
 playGame();
-
-
-
-
-
-
-
-
-//disable function: 
-// function(){
-//     disable)
-// }
-// function with timeout to enable. 
-// stays disabled until delay is finsihed 

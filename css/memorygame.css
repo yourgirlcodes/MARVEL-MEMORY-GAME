@@ -271,35 +271,59 @@ body {
 
 /* ADJUSTMENTS FOR RESPONSIVENESS */
 
+#newGameSmall {
+    display: none;
+}
+
 @media only screen and (max-width: 1100px) {
     .card {
         height: 10vh;
         width: 15vw;
         margin: 0.5rem;
-        top: 3vh;
+        z-index: 5;
     }
-
-    .theGame {
+    .theGame{
         transform: rotate(-90deg);
         transform-origin: left top;
         width: 100vh;
         overflow-x: hidden;
         position: fixed;
-        top: 100%;     
-        overflow: hidden; 
+        top: 100%;
+        overflow: hidden;
         height: 100%;
+    }
+
+    #myModal{
+        transform: rotate(-90deg);
+        transform-origin: left top;
+        width: 100vh;
+        overflow-x: hidden;
+        position: fixed;
+        top: 100%;
+        overflow: hidden;
+        height: 70%;
     }
 
     #navHeader {
         position: fixed;
-        opacity: 0.7;
-        /* width: 10%; */
-        /* right: 10rem; */
-        /* height: 10%; */
+        top: 5.6rem;
+        margin: 1rem;
+    }
+    #newGame {
+        display: none;
+    }
+    #newGameSmall {
+        display: block;
+        position: absolute;
+        left: 1rem;
+        
     }
     #score {
-        /* height: 0.5rem;
-        width: 0.5rem; */
+        background-color: rgba(255, 255, 255, 0.2);
+        position: fixed;
+        font-size: 1vh;
+        margin: 1.5rem;
+        padding: 1vh;
     }
 }
 

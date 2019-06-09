@@ -19,95 +19,95 @@
 
 <body>
 
-    
+
     <div id="openingPage">
         <div id="openingBlock">
             <img src="images/marvelLogo.jpg" />
-        <div id="themeQuestion">PICK A LEVEL:</div>
-        <button class="levelChoice" id="6">Aspiring Hero</button>
-        <button class="levelChoice" id="9">Hero in Training</button>
-        <button class="levelChoice" id="12">Superhero</button>
-    </div>
+            <div id="themeQuestion">PICK A LEVEL:</div>
+            <button class="levelChoice" id="6">Aspiring Hero</button>
+            <button class="levelChoice" id="9">Hero in Training</button>
+            <button class="levelChoice" id="12">Superhero</button>
+        </div>
     </div>
 
     <div class="theGame" id="memoryGame">
         <div class="navbar navbar-default justify-content-center" id="navHeader">
-            <button value="Refresh Page" onClick="window.location.reload()" id="newGame"><img
-                    src="images/PinClipart.com_bubbles-clipart_3373589.png" /></button>
             <span id="score">WATCH YOUR SCORE HERE</span>
+            <span class="close"><button value="Refresh Page" onClick="window.location.reload()" id="newGame"><img
+                        src="images/SeekClipart.com_washcloth-clipart_1044563.png" /></button>
+            </span>
 
         </div>
 
         <div id="gameSquare">
 
+            <span class="close">
+                <button value="Refresh Page" onClick="window.location.reload()" id="newGameSmall"><img
+                        src="images/smaller.png" /></button>
+            </span>
+
             <div id="beginner">
-            <div class="row" id="one">
-                <div class="card" id="0"></div>
-                <div class="card" id="1"></div>
-                <div class="card" id="2"></div>
+                <div class="row" id="one">
+                    <div class="card" id="0"></div>
+                    <div class="card" id="1"></div>
+                    <div class="card" id="2"></div>
+                </div>
+
+                <div class="row" id="two">
+                    <div class="card" id="3"></div>
+                    <div class="card" id="4"></div>
+                    <div class="card" id="5"></div>
+                </div>
+
+
+                <div class="row" id="three">
+                    <div class="card" id="6"></div>
+                    <div class="card" id="7"></div>
+                    <div class="card" id="8"></div>
+                </div>
+
+                <div class="row" id="four">
+                    <div class="card" id="9"></div>
+                    <div class="card" id="10"></div>
+                    <div class="card" id="11"></div>
+                </div>
             </div>
 
-            <div class="row" id="two">
-                <div class="card" id="3"></div>
-                <div class="card" id="4"></div>
-                <div class="card" id="5"></div>
+            <div id="intermediate">
+                <div class="middle">
+                    <div class="card" id="12"></div>
+                    <div class="card" id="13"></div>
+                    <div class="card" id="14"></div>
+                </div>
+
+                <div class="middle">
+                    <div class="card" id="15"></div>
+                    <div class="card" id="16"></div>
+                    <div class="card" id="17"></div>
+                </div>
             </div>
 
+            <div id="pro">
+                <div class="advanced">
+                    <div class="card" id="18"></div>
+                    <div class="card" id="19"></div>
+                    <div class="card" id="20"></div>
+                </div>
 
-            <div class="row" id="three">
-                <div class="card" id="6"></div>
-                <div class="card" id="7"></div>
-                <div class="card" id="8"></div>
+                <div class="advanced">
+                    <div class="card" id="21"></div>
+                    <div class="card" id="22"></div>
+                    <div class="card" id="23"></div>
+                </div>
             </div>
-
-            <div class="row" id="four">
-                <div class="card" id="9"></div>
-                <div class="card" id="10"></div>
-                <div class="card" id="11"></div>
-            </div>
-        </div>
-
-        <div id="intermediate">
-            <div class="middle">
-                <div class="card" id="12"></div>
-                <div class="card" id="13"></div>
-                <div class="card" id="14"></div>
-            </div>
-
-            <div class="middle">
-                <div class="card" id="15"></div>
-                <div class="card" id="16"></div>
-                <div class="card" id="17"></div>
-            </div>
-        </div>
-
-        <div id="pro">
-            <div class="advanced">
-                <div class="card" id="18"></div>
-                <div class="card" id="19"></div>
-                <div class="card" id="20"></div>
-            </div>
-
-            <div class="advanced">
-                <div class="card" id="21"></div>
-                <div class="card" id="22"></div>
-                <div class="card" id="23"></div>
-            </div>
-        </div>
-
-
 
         </div>
-
     </div>
 
     <div id="myModal" class="modal">
 
         <div class="modal-content">
             <div class="modal-header">
-                <span class="close"><button value="Refresh Page" onClick="window.location.reload()" id="newGame"><img
-                            src="images/newGameCopy.png" /></button>
-                </span>
 
             </div>
             <div class="modal-body" id="winnerSuperhero">
