@@ -88,7 +88,7 @@ function playGame() {
                     }
                     updateScores();
 
-                //NO MATCH:
+                    //NO MATCH:
                 } else if (firstCard.style.backgroundImage != secondCard.style.backgroundImage) {
                     incorrectGuesses++
                     totalGuesses++

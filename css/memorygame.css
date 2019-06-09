@@ -20,11 +20,12 @@ body {
 #score {
     color: white;
     font-size: 2vh;
-    margin: 4vh;
+    margin-top: 6vh;
     position: absolute;
-    border: 0.2vh solid white;
-    padding: 2vh;
+    border: 0.4vh solid white;
+    padding: 3vh;
     font-family: 'Roboto Mono', monospace;
+    left: 70%;
 }
 
 #score:hover {
@@ -51,6 +52,7 @@ body {
     display: flex;
     vertical-align: middle;
     flex-direction: column;
+    justify-items: center;
 }
 
 #gameSquare {
@@ -58,18 +60,25 @@ body {
     justify-content: center;
     vertical-align: middle;
     flex-direction: row;
-    margin: 1em;
+    margin-top: 10em;
     height: 100%;
 }
 
-#navHeader {
+.theGame#memoryGame #theNavBar {
+    top: 3em;
+    display: block;
     text-align: center;
+    width: 20rem;
 }
 
 #newGame {
     background-color: black;
     border: none;
-    margin-top: 2em;
+    margin-top: 4vh;
+    justify-content: right;
+    display: flex;
+    position: absolute;
+    left: 45%;
 }
 
 #newGame:hover {
@@ -99,7 +108,7 @@ body {
 }
 
 .close {
-    color: #aaa;
+    
     float: right;
     font-size: 28px;
     font-weight: bold;
@@ -165,6 +174,7 @@ body {
 
 #pro, #intermediate, #beginner {
     display: flex;
+    top: 20vh;
 }
 
 /* OPENING PAGE */
@@ -271,7 +281,7 @@ body {
 
 /* ADJUSTMENTS FOR RESPONSIVENESS */
 
-#newGameSmall {
+#gameSquare #newGameSmall {
     display: none;
 }
 
@@ -281,8 +291,9 @@ body {
         width: 15vw;
         margin: 0.5rem;
         z-index: 5;
+        
     }
-    .theGame{
+    .theGame {
         transform: rotate(-90deg);
         transform-origin: left top;
         width: 100vh;
@@ -291,38 +302,41 @@ body {
         top: 100%;
         overflow: hidden;
         height: 100%;
+        margin: 0;
     }
-
-    #myModal{
+    #myModal {
         transform: rotate(-90deg);
         transform-origin: left top;
-        width: 100vh;
+        width: 90vh;
         overflow-x: hidden;
         position: fixed;
         top: 100%;
         overflow: hidden;
-        height: 70%;
+        height: 60%;
     }
-
-    #navHeader {
-        position: fixed;
-        top: 5.6rem;
-        margin: 1rem;
-    }
+   
     #newGame {
         display: none;
     }
-    #newGameSmall {
+    #pro, #intermediate, #beginner {
+        display: absolute;
+        top: 0;
+    }
+    #gameSquare {       
+        margin-top: 3rem;
+
+    }
+    #gameSquare #newGameSmall {
         display: block;
         position: absolute;
         left: 1rem;
-        
     }
+
     #score {
         background-color: rgba(255, 255, 255, 0.2);
         position: fixed;
         font-size: 1vh;
-        margin: 1.5rem;
+        margin: 1rem;
         padding: 1vh;
     }
 }

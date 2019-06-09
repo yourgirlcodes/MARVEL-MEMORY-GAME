@@ -31,20 +31,18 @@
     </div>
 
     <div class="theGame" id="memoryGame">
-        <div class="navbar navbar-default justify-content-center" id="navHeader">
-            <span id="score">WATCH YOUR SCORE HERE</span>
-            <span class="close"><button value="Refresh Page" onClick="window.location.reload()" id="newGame"><img
-                        src="images/SeekClipart.com_washcloth-clipart_1044563.png" /></button>
-            </span>
-
+        <div id="theNavBar">
+            <div class="navbar navbar-default justify-content-center" id="navHeader">
+                <span class="close"><button value="Refresh Page" onClick="window.location.reload()" id="newGame"><img
+                            src="images/PinClipart.com_bubbles-clipart_3373589.png" /></button>
+                </span>
+                <span id="score">WATCH YOUR SCORE HERE</span>
+            </div>
         </div>
 
         <div id="gameSquare">
-
-            <span class="close">
-                <button value="Refresh Page" onClick="window.location.reload()" id="newGameSmall"><img
-                        src="images/smaller.png" /></button>
-            </span>
+            <button value="Refresh Page" onClick="window.location.reload()" id="newGameSmall"><img
+                    src="images/smaller.png" /></button>
 
             <div id="beginner">
                 <div class="row" id="one">
@@ -102,13 +100,16 @@
             </div>
 
         </div>
+
     </div>
 
     <div id="myModal" class="modal">
 
         <div class="modal-content">
             <div class="modal-header">
-
+                <span class="close"><button value="Refresh Page" onClick="window.location.reload()" id="newGameSmall"><img
+                            src="images/newGameCopy.png" /></button>
+                </span>
             </div>
             <div class="modal-body" id="winnerSuperhero">
                 <img src="images/hero8.png" />
